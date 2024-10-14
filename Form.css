@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Prompt', sans-serif;
+  background: url('Spcae.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+#app {
+  text-align: center;
+  padding: 50px;
+}
+
+h1, h2 {
+  text-shadow: 2px 2px 5px #000;
+}
+
+button {
+  background-color: #1e90ff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #63b8ff;
+}
+
+#choices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.choice-button {
+  background-color: #3cb371;
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 60%;
+}
+
+.choice-button:hover {
+  background-color: #66cdaa;
+}
+
+.correct {
+  background-color: #4CAF50 !important;
+}
+
+.incorrect {
+  background-color: #f44336 !important;
+}
+
+#next-button-container {
+  display: none; /* ซ่อนคอนเทนเนอร์ปุ่มถัดไปในตอนเริ่มต้น */
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#next-button {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #ff8c00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#next-button:hover {
+  background-color: #ffa500;
+}
+
+.show {
+  display: flex !important; /* แสดงคอนเทนเนอร์หรือปุ่มที่มีคลาสนี้ */
+}
+
+#result-screen h2 {
+  margin-top: 50px;
+}
+
+#restart-button {
+  background-color: #dc143c;
+}
+
+#restart-button:hover {
+  background-color: #ff1493;
+}
